@@ -296,9 +296,6 @@ FSM_Process : process(master_clk)
     end if;
   end process FSM_Process;
 
-  -- (El resto del archivo: Mux_Tick_Gen, Bin_to_BCD_Convert, Display_Driver)
-  -- (No necesitan cambios)
-
   Mux_Tick_Gen : process(master_clk)
   begin
     if rising_edge(master_clk) then
