@@ -24,7 +24,7 @@ architecture Behavioral of Memory_Store is
 
   type t_mem_array is array (0 to 255) of std_logic_vector(23 downto 0);
   
-  -- Programa original de la Practica 2 (10 valores + delay)
+  -- Practica 2 (10 valores + delay)
   constant Program_Data : t_mem_array := (
     -- 1. Operación (105 + 5)
     0  => OP_LDX   & x"80" & x"00", -- Carga 105

@@ -17,7 +17,8 @@ entity System_Main is
     SEG_D  : out std_logic;  SEG_E  : out std_logic;  SEG_F  : out std_logic;
     SEG_G  : out std_logic;  SEG_DP : out std_logic;
     DIG1   : out std_logic;  DIG2   : out std_logic;
-    DIG3   : out std_logic;  DIG4   : out std_logic
+    DIG3   : out std_logic;  DIG4   : out std_logic;
+	 LEDS	  : out std_logic_vector(3 downto 0)
   );
 end entity System_Main;
 
@@ -39,7 +40,8 @@ architecture Behavioral of System_Main is
       o_seg_d      : out std_logic; o_seg_e : out std_logic; o_seg_f : out std_logic;
       o_seg_g      : out std_logic; o_seg_dp: out std_logic;
       o_dig1       : out std_logic; o_dig2 : out std_logic;
-      o_dig3       : out std_logic; o_dig4 : out std_logic
+      o_dig3       : out std_logic; o_dig4 : out std_logic;
+		o_flags		 : out std_logic_vector(3 downto 0)
     );
   end component;
 
@@ -67,6 +69,7 @@ begin
       o_seg_d      => SEG_D,  o_seg_e => SEG_E,  o_seg_f => SEG_F,
       o_seg_g      => SEG_G,  o_seg_dp => SEG_DP,
       o_dig1       => DIG1,   o_dig2 => DIG2,
-      o_dig3       => DIG3,   o_dig4 => DIG4
+      o_dig3       => DIG3,   o_dig4 => DIG4,
+		o_flags		 => LEDS
     );
 end architecture Behavioral;

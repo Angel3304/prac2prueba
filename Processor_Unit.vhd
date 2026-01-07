@@ -12,7 +12,8 @@ entity Processor_Unit is
     o_seg_d      : out std_logic; o_seg_e : out std_logic; o_seg_f : out std_logic;
     o_seg_g      : out std_logic; o_seg_dp: out std_logic;
     o_dig1       : out std_logic; o_dig2 : out std_logic;
-    o_dig3       : out std_logic; o_dig4 : out std_logic
+    o_dig3       : out std_logic; o_dig4 : out std_logic;
+	 o_flags		  : out std_logic_vector(3 downto 0)
   );
 end entity Processor_Unit;
 
